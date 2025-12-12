@@ -1,0 +1,170 @@
+* {
+    font-family: system-ui, -apple-
+system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ffffff;
+    color: #000000
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+header {
+    background: url("WhatsApp\ Image\ 2025-12-12\ at\ 09.20.28.jpeg");   
+    background-size: cover;           
+    background-position: center;        
+    background-repeat: no-repeat;   
+    background-position: center 10%;    
+    
+    color: white;
+    text-align: center;
+    padding: 100px 16px;
+}
+header h1 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+header p {
+    opacity: 0.9;
+}
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 8px solid #ffed00;
+    background: #ffffff;
+    overflow: hidden;
+    margin: -60px auto 32px;
+}
+    foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.separador {
+ background: #e2e8f0;
+}
+main {
+    text-align: center;
+    padding: 40px 16px;
+    background: #ffffff;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.card {
+  background: rgb(241, 240, 240);
+  width: 500px;
+  height: 100px;
+  border-radius: 12px;
+  padding: 19px 24px;
+  box-shadow: 0 8px 13px #0066ff;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border 0.15s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  flex-direction: column;  
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgb(229, 255, 0);
+    border: 2px solid #000000;
+}
+.card span.emoji {
+    font-size: 26px;
+    display: block;
+    margin-bottom: 6px;
+}
+.card h2 {
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: #000000;
+}
+a {
+ color:#000000;
+ text-decoration: none;
+ 
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #e5f50b;
+    box-shadow: 0 8px 18px #0066ff;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+    margin: -100px auto 40px; 
+}
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section {
+    justify-content: center;
+    place-items: center;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+footer {
+    height: 40px;
+    background: #e2ed0a;
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+
+#miImagen1 {
+    position: absolute;   /* Permite moverla libremente */
+    top: 750px;            /* Distancia desde arriba */
+    left: 250px;          /* Distancia desde la izquierda */
+    width: 300px;         /* Ancho de la imagen */
+    height: auto;         /* Mantiene la proporción */
+}
+
+#miImagen2 {
+    position: absolute;   /* Permite moverla libremente */
+    top: 330px;            /* Distancia desde arriba */
+    left: 250px;          /* Distancia desde la izquierda */
+    width: 300px;         /* Ancho de la imagen */
+    height: auto;         /* Mantiene la proporción */
+}
+
+#miImagen3 {
+  position: absolute;   /* Permite moverla libremente */
+    top: 280px;            /* Distancia desde arriba */
+    left: 1350px;          /* Distancia desde la izquierda */
+    width: 300px;         /* Ancho de la imagen */
+    height: auto;         /* Mantiene la proporción */
+}
+
+#miImagen4 {
+    position: absolute;   /* Permite moverla libremente */
+    top: 735px;            /* Distancia desde arriba */
+    left: 1400px;          /* Distancia desde la izquierda */
+    width: 175px;         /* Ancho de la imagen */
+    height: auto;         /* Mantiene la proporción */
+}
