@@ -1,170 +1,331 @@
-* {
-    font-family: system-ui, -apple-
-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 body {
-    background: #ffffff;
-    color: #000000
-}
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-header {
-    background: url("WhatsApp\ Image\ 2025-12-12\ at\ 09.20.28.jpeg");   
-    background-size: cover;           
-    background-position: center;        
-    background-repeat: no-repeat;   
-    background-position: center 10%;    
-    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1a42ad , #030718);
     color: white;
-    text-align: center;
-    padding: 100px 16px;
+    min-height: 800pxh;
+  display: flex;
+  flex-direction: column;
 }
-header h1 {
-    font-size: 32px;
-    margin-bottom: 60px;
+
+header {
+
+ 
+   background: linear-gradient(to right, #e34e9e, #3fb9f5);
+   padding: 2%;
+   color: white
 }
-header p {
-    opacity: 0.9;
+
+
+
+
+ form {
+    background: radial-gradient(circle at top, #1e2836 0%, #020617 90%);
+    
+    padding: 15px;
+    align-items: center;
+    justify-self: center;
+    height: 1200px;
+    width: 900px;
+    border-radius: 10px;
+    border: rgb(141, 141, 141) 1px solid
+    
+
+    
 }
-.foto-perfil {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    border: 8px solid #ffed00;
-    background: #ffffff;
-    overflow: hidden;
-    margin: -60px auto 32px;
+h3{
+    
+    margin:8px;
 }
-    foto-perfil img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.separador {
- background: #e2e8f0;
-}
+
 main {
-    text-align: center;
-    padding: 40px 16px;
-    background: #ffffff;
+    justify-items: center;
+    
 }
-.cards {
+
+.flex-centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.caja {
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: rgb(141, 141, 141) 1px solid;
+    width: 275px;
+    height: 14px; 
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.degradado {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #141c2b, #9d3a72, #2e9ab6, #218f4d, #151d2c);
+}
+
+.caja2 {
+    background-color: rgba(0, 0, 0, 0.225);
+    padding: 8px;
+    border-radius: 30px;
+    text-align: left;
+    font-weight: bold;
+    border: rgb(141, 141, 141) 1px solid;
+    width: 475px;
+    height: 14px; 
+    align-items: left;
+    justify-content: left;
+    
+
+
+}
+
+input {
+     margin: 10px;
+     border-radius: 9px;
+     border-color: gray;
+     height: 25px;
+     background-color: #0e1427;
+     border: rgb(123, 123, 123) 2px solid;
+     width: 300px;
+     color: rgb(147, 147, 147);
+    
+
+     
+}
+
+label {
+    margin: 10px
+    
+
+}
+
+.parrafo {
+    
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 0;
+    
+}
+
+.campo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
+     width: 500px;
+     height: 500px;
+     
 }
-.card {
-  background: rgb(241, 240, 240);
-  width: 500px;
-  height: 100px;
-  border-radius: 12px;
-  padding: 19px 24px;
-  box-shadow: 0 8px 13px #0066ff;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border 0.15s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;    
-  flex-direction: column;  
+
+.flex-columnas {
+    display: flex;
+    gap: 20px;
+}   
+
+.textopequeño {
+    font-size: 14px;
+    margin-top: -17px;
+    padding: 10px;
+    color: rgb(171, 170, 170);
 }
-.card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgb(229, 255, 0);
-    border: 2px solid #000000;
+
+.barra {
+    width: 850px; 
+    justify-content: center;
 }
-.card span.emoji {
-    font-size: 26px;
-    display: block;
-    margin-bottom: 6px;
+
+.altura {
+    height: 35px;
 }
-.card h2 {
-    font-size: 16px;
-    margin-bottom: 3px;
-    color: #000000;
+
+.valor {
+    border: rgb(123, 123, 123) 2px solid;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+
+
 }
-a {
- color:#000000;
- text-decoration: none;
+
+.barra3 {
+    margin-top: 0px;
+    padding: 10px;
+    font-weight: 1;
+    color:rgb(171, 170, 170);
+}
+
+select {
+      margin: 10px;
+     border-radius: 9px;
+     border-color: gray;
+     height: 25px;
+     background-color: transparent;
+     border: rgb(123, 123, 123) 2px solid;
+     width: 300px;
+     color: rgb(147, 147, 147);
+}
  
+.campus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+     width: 500px;
+     height: 200px;
+     
 }
 
-.foto-perfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 8px solid #e5f50b;
-    box-shadow: 0 8px 18px #0066ff;
-    background: #ffffff;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.seleccion {
+    height: 15px;
+    ;
+}
 
+
+input[type="radio"] {
+    margin: 0;         
+    width: auto;       
+    height: auto;   
+       
+}
+
+.flex-row {
+    display:flex;
+    gap:10px;
+    height: -900px;    
+    width: 1000px;
+    margin-left: 10px;
+    
+}
+
+.opcion-radio {
+
+    height: 70px;
+}
+
+.campo3 {
+    display: flex;
+    flex-direction: column;
+     width: 500px;
+     height: 120px;
+     
+}
+
+
+
+.formulario {
+display:flex;
+    gap:10px;
+    height: -2000px;    
+    width: 1000px;
+    margin-left: 10px;
+
+}
+
+.cuadrados {
+    height: 15px;
+    width: 15px;
+
+    
+
+}
+
+.alinear{
+    margin-left: 10px;
+    display: flex;
+    height: 60px;
+}
+
+.formulario input{
+    width: auto;
+    height: auto;
+}
+
+.alinear {
+
+    display: flex;
+    height: 60px;
+    align-items: center;
+    margin-left: -7px;
+    margin-top: -20px;
   
-    margin: -100px auto 40px; 
+   
 }
-.foto-perfil img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-section {
-    justify-content: center;
-    place-items: center;
-    display: grid;
-    align-items: center;
-    text-align: center;
-}
-footer {
-    height: 40px;
-    background: #e2ed0a;
+
+.alinear2 {
+    
     display: flex;
-    justify-content: center;   
-    align-items: center;       
-    text-align: center;
-    margin-top: 100px;
+    height: 0px;
+    align-items: center;
+      margin-left: 3px;
+    
+}
+
+.cuadrados2 {
+    height: 13px;
+    width: 13px;
+}
+
+textarea {
+    margin: 10px;
+     border-radius: 9px;
+     border-color: gray;
+     height: 45px;
+     background-color: transparent;
+     border: rgb(123, 123, 123) 2px solid;
+     width: 600px;
+     color: rgb(147, 147, 147);
+}
+
+.submit {
+    color: white;
+    background-color: #d42e79;
+    border-radius: 30px;
+    border: rgba(141, 141, 141, 0) 1px solid;
+    height: 30px;
+    width: 120px;
 
 }
 
-
-#miImagen1 {
-    position: absolute;   /* Permite moverla libremente */
-    top: 750px;            /* Distancia desde arriba */
-    left: 250px;          /* Distancia desde la izquierda */
-    width: 300px;         /* Ancho de la imagen */
-    height: auto;         /* Mantiene la proporción */
+.reset {
+     color: rgb(255, 231, 231);
+      border: rgb(123, 123, 123) 2px solid;
+       border-color: gray;
+       border-radius: 30px;
+       height: 30px;
+       background-color: #1c2635;
 }
 
-#miImagen2 {
-    position: absolute;   /* Permite moverla libremente */
-    top: 330px;            /* Distancia desde arriba */
-    left: 250px;          /* Distancia desde la izquierda */
-    width: 300px;         /* Ancho de la imagen */
-    height: auto;         /* Mantiene la proporción */
+.button {
+     color: rgb(50, 155, 206);
+      border: rgb(50, 155, 206) 2px solid;
+       border-color:rgb(50, 155, 206);
+       border-radius: 30px;
+       height: 30px;
+       background-color: #0e1528;
 }
 
-#miImagen3 {
-  position: absolute;   /* Permite moverla libremente */
-    top: 280px;            /* Distancia desde arriba */
-    left: 1350px;          /* Distancia desde la izquierda */
-    width: 300px;         /* Ancho de la imagen */
-    height: auto;         /* Mantiene la proporción */
+section {
+    margin-top: auto;
 }
 
-#miImagen4 {
-    position: absolute;   /* Permite moverla libremente */
-    top: 735px;            /* Distancia desde arriba */
-    left: 1400px;          /* Distancia desde la izquierda */
-    width: 175px;         /* Ancho de la imagen */
-    height: auto;         /* Mantiene la proporción */
+.h4-paralelo{
+  display: flex;
+  gap: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
+
+
+
+
