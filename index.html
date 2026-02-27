@@ -1,331 +1,214 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    background: radial-gradient(circle at top, #1a42ad , #030718);
-    color: white;
-    min-height: 800pxh;
-  display: flex;
-  flex-direction: column;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-header {
+<style>
+    h4{font: weight 1px;
+    }
 
- 
-   background: linear-gradient(to right, #e34e9e, #3fb9f5);
-   padding: 2%;
-   color: white
-}
-
-
-
-
- form {
-    background: radial-gradient(circle at top, #1e2836 0%, #020617 90%);
+    footer {
+        padding: 40px;
+        text-align: center;
+        color: rgb(83, 83, 83);
+    }
+    section {
+        background: radial-gradient(circle, #1a42ad , #030718);
+        margin: 0px;   }
     
-    padding: 15px;
-    align-items: center;
-    justify-self: center;
-    height: 1200px;
-    width: 900px;
-    border-radius: 10px;
-    border: rgb(141, 141, 141) 1px solid
+</style>
+
+<body>
     
-
-    
-}
-h3{
-    
-    margin:8px;
-}
-
-main {
-    justify-items: center;
-    
-}
-
-.flex-centrado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-}
-
-.caja {
-    background-color: transparent;
-    padding: 8px;
-    border-radius: 30px;
-    text-align: center;
-    font-weight: bold;
-    border: rgb(141, 141, 141) 1px solid;
-    width: 275px;
-    height: 14px; 
-    align-items: center;
-    justify-content: center;
-
-    
-}
-
-.degradado {
-  border: none;
-  height: 2px;
-  background: linear-gradient(to right, #141c2b, #9d3a72, #2e9ab6, #218f4d, #151d2c);
-}
-
-.caja2 {
-    background-color: rgba(0, 0, 0, 0.225);
-    padding: 8px;
-    border-radius: 30px;
-    text-align: left;
-    font-weight: bold;
-    border: rgb(141, 141, 141) 1px solid;
-    width: 475px;
-    height: 14px; 
-    align-items: left;
-    justify-content: left;
-    
-
-
-}
-
-input {
-     margin: 10px;
-     border-radius: 9px;
-     border-color: gray;
-     height: 25px;
-     background-color: #0e1427;
-     border: rgb(123, 123, 123) 2px solid;
-     width: 300px;
-     color: rgb(147, 147, 147);
-    
-
+    <header>
      
-}
+        <div style="margin-left: 20%;">
+            <div class="caja2">
+       FORMULARIOS HTML • PRÁCTICA SMX</div> 
+        <h2>CLUB DE HTML MONLAU</h2>
+        <p>Rellena el formulario para solicitar tu plaza en el <b>Club Creativo</b>, donde mezclamos diseño,
+        programación y videojuegos.</p>
+        </div>
 
-label {
-    margin: 10px
-    
+    </header>
 
-}
+        <main>
+    <div style="color:white";>
+    <h3 style="text-align: center;">Práctica: Formulario semántico y colorido</h3>
+    <p style="text-align: center;">Esta página utiliza <b style="color: blanchedalmond;">header, main, section y footer </b>y un formulario centrado en pantalla. <br>
+EI formulario incluye distintos tipos de campos HTML5, validación básica y varios botones.</p>
+    </div>
 
-.parrafo {
-    
-    font-size: 15px;
-    padding: 10px;
-    margin-top: 0;
-    
-}
+    <form action="#" method="post">
+<br>
+        <div class="caja"><img src="Rueda-Color.webp" alt="colores" width="15px" height="15px">
+        FORMULARIO DE INSCRIPCIÓN</div> 
+        <h3>Solicitud de plaza • Club Creativo</h3>  
+        <p style="margin: 8px;";>Imagina que este formulario se envía al servidor del centro. Completa todos los campos
+        obligatorios <b style="color: #fdf3c7">(*)</b>.</p>   
+        <br>
+        
+        <hr class="degradado">
+        <br>
+ <div class="contenedor-inicial flex-columnas">
+        <div class="campo">
+        <!-- NOMBRE DE USUARIO CREATIVO -->    
+        <label for="nombre"><b>Nombre de usuario creativo <b style="color: #facc14;">*</b></b></label>
+        <input style="height: 25px;" type="text" id="nombre" placeholder="Ejemplo: PixelWizard"> 
+        <p class="textopequeño">Entre 3 y 20 caracteres, sin espacios largos.</p>
 
-.campo {
-    display: flex;
-    flex-direction: column;
-     width: 500px;
-     height: 500px;
-     
-}
+        
+        
+         <!-- CONTRASEÑA -->    
+        <label for="Contraseña"><b>Crea una clave de acceso<b style="color: #facc14;">*</b></b></label>
+        <input type="password" id="Contraseña" placeholder="Mínimo 6 caracteres"> 
+        <p class="textopequeño">Se usará para entrar a la zona privada del club.</p>
+        
+        <!-- EDAD -->
+        <label for="Edad"><b>Edad<b style="color: #facc14;">*</b></b></label>
+        <input type="number" id="edad" name="edad" min="12" max="99" step="1" placeholder="Ejemplo: 16">
+        <p class="textopequeño">Introduce tu edad (entre 12 y 99 años).</p>
+        
 
-.flex-columnas {
-    display: flex;
-    gap: 20px;
-}   
-
-.textopequeño {
-    font-size: 14px;
-    margin-top: -17px;
-    padding: 10px;
-    color: rgb(171, 170, 170);
-}
-
-.barra {
-    width: 850px; 
-    justify-content: center;
-}
-
-.altura {
-    height: 35px;
-}
-
-.valor {
-    border: rgb(123, 123, 123) 2px solid;
-    border-radius: 10px;
-    height: 100px;
-    width: 100px;
-    padding: 5px;
-
-
-}
-
-.barra3 {
-    margin-top: 0px;
-    padding: 10px;
-    font-weight: 1;
-    color:rgb(171, 170, 170);
-}
-
-select {
-      margin: 10px;
-     border-radius: 9px;
-     border-color: gray;
-     height: 25px;
-     background-color: transparent;
-     border: rgb(123, 123, 123) 2px solid;
-     width: 300px;
-     color: rgb(147, 147, 147);
-}
- 
-.campus {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end ;
-     width: 500px;
-     height: 200px;
-     
-}
-
-.seleccion {
-    height: 15px;
-    ;
-}
-
-
-input[type="radio"] {
-    margin: 0;         
-    width: auto;       
-    height: auto;   
+        <!-- EXPERIENCIA -->
+      
+        <div style="height: 20px; width: 500px;">
+            <label for="nota"><b>Nivel de experiencia creativa (1 = inicio, 10 = experto)<b style="color: #facc14;">*</b></b></label>
+            <input type="range" class="barra"  id="nota" name="nota" min="1" max="10" value="5" oninput="document.getElementById ('valor-nota').textContent = this.value">
+            <span style="padding: 10px;">Valor actual</span>
+            <span id= "valor-nota" class="valor"> 5</span> 
+             <h5 class="barra3">Mueve el control deslizante para indicar tu nivel aproximado.</h5>
+        </div>
        
-}
-
-.flex-row {
-    display:flex;
-    gap:10px;
-    height: -900px;    
-    width: 1000px;
-    margin-left: 10px;
     
-}
+        
 
-.opcion-radio {
+        </div>
 
-    height: 70px;
-}
+        <div class="campo">
+        <!-- CORREO DE MONLAU-->    
+        <label for="email" ><b>Correo de monlau <b style="color: #facc14;">*</b></b></label>
+        <input type="email" name="email id=email" placeholder="nombre.apellido@centro.edu">
+        <p class="textopequeño">Debe ser un correo válido; HTML comprobará el formato.</p>
 
-.campo3 {
-    display: flex;
-    flex-direction: column;
-     width: 500px;
-     height: 120px;
+        <!-- TELEFONO -->
+        <label for="email"><b>Teléfono de contacto de emergencia <b style="color: #facc14;">*</b></b></label>
+        <input style="height: 35px;" type="tel" name="Telefono" placeholder="+34 600 000 000">
+        <p class="textopequeño">Opcional, pero recomendable para actividades fuera del centro.</p>
+
+        <label for="Fecha"><b>Fecha en la que empezaste en el centro<b style="color: #facc14;">*</b></b></label>
+        <input style="height: 35px;" type="date" id="Fecha">
+        <p class="textopequeño">Ayuda a organnizar grupos por antigüedad.</p>
+
+                
+        </div>
+        </div>
+
+    
+
+<div class="contenedor-inicial flex-columnas">
+    <div class="campo3">
+        <div class="campo3">
+             <label for="email"><b>Curso actual<b style="color: #facc14;">*</b></b></label> 
+             <select style="height: 35px; margin-top: px;" id="deportes" name="deportes"> 
+                    <option value="--Selecciona uno--">-- Selecciona tu curso--</option>
+                    <option value="Futbol">1ro ESO</option>
+                    <option value="Basket">2do ESO</option>
+                    <option value="Petanca">3ro ESO</option>
+                </select>
+                 <p class="textopequeño">Este campo es obligatorio; elige una opción.</p>
+
+               
+</div>
+<label for="Fecha"><b>Turno preferido para las sesiones</b></label>
+<div class="flex-row">
+    
+    <div class="opcion-radio">
+        <input type="radio" id="mañanas" name="turno" value="mañanas">
+        <label for="mañanas">Mañanas (después de clase)</label>
+    </div>
+    <div class="opcion-radio">
+        <input type="radio" id="tardes" name="turno" value="tardes">
+        <label for="tardes">Tardes</label>
+    </div>
+    <div class="opcion-radio">
+        <input type="radio" id="sabados" name="turno" value="sabados">
+        <label for="sabados">Sábados puntuales</label>
+        
+        <p class="textopequeño" style="margin-top: 0px; margin-left: -360px;">Solo puedes elegir una opción porque comparten el mismo name.</p>
+    </div>
+    
+        </div>
+
+        <div></div>
+                <p style="margin-left: 14px;"><b>Áreas del club que te interesan (puedes marcar varias)</b></strong></p>
+                
+                <div class="formulario">
+                    <div class="alinear">
+                    <input class="cuadrados" type="checkbox" id="diseno" name="areas" value="diseno">
+                    <label for="diseno">Diseño gráfico y pósters</label>
+                       </div>
+                 <div class="alinear">     
+                    <input class="cuadrados" type="checkbox" id="web" name="areas" value="web">
+                    <label for="web">Páginas web y formularios</label>
+                        </div>
+                <div class="alinear">
+                    <input class="cuadrados" type="checkbox" id="videojuegos" name="areas" value="videojuegos">
+                        <label for="videojuegos">Videojuegos e interfaces</label>
+                    </div>
+                    <br>
+                
+
+                </div>
+                <div class="formulario1">
+                <div class="alinear2">  
+                    <input class="cuadrados2" type="checkbox" id="musica" name="areas" value="musica">
+                    <label for="musica">Música y sonido</label><br>
+                    </div>
+                    </div>
+                    <br>
+                <p class="textopequeño">Cada casilla es independiente: puedes elegir 0, 1 0 varias.</p>
+                 
+                <div><label for="Pregunta"><b>¿Por qué quieres entrar en el club?  <b style="color: #facc14;">*</b></b></label> <br>
+                <textarea class="holahola" name="Pregunta" id="Comentarios" placeholder="Cuéntanos qué te motiva, te gustaría aprender o qué proyectos te imaginas..."></textarea>
+                <p class="textopequeño">Escribe una pequeña explicación en unas pocas líneas.</p>
+
+                <button class="submit" type="submit"><b>Enviar solicitud </b></button>
+                <button class="reset" type="reset"><b>Limpiar formulario</b></button>
+                <button class="button" type="button"><b>Probar botón JS</b></button>
+                
+                
+            </div>
+    </div>
+
+        <div class="campus">
+        <!-- CORREO DE MONLAU-->    
+        <label for="url"><b>Enlace a tu portfolio o red social creativa<b style="color: #facc14;">*</b></b></label>
+        <input style="height: 35px"; type="url" name="Url" id="Url" placeholder="https://mi-portfolio.com">
+        <p class="textopequeño" style="margin-left: 55px;">Debe empezar por http:// o https:// para que el tipo URL 10 acepte.</p>
+        
+            
+        </div>
+        
+
      
-}
 
-
-
-.formulario {
-display:flex;
-    gap:10px;
-    height: -2000px;    
-    width: 1000px;
-    margin-left: 10px;
-
-}
-
-.cuadrados {
-    height: 15px;
-    width: 15px;
-
-    
-
-}
-
-.alinear{
-    margin-left: 10px;
-    display: flex;
-    height: 60px;
-}
-
-.formulario input{
-    width: auto;
-    height: auto;
-}
-
-.alinear {
-
-    display: flex;
-    height: 60px;
-    align-items: center;
-    margin-left: -7px;
-    margin-top: -20px;
-  
+    </form>
    
-}
-
-.alinear2 {
     
-    display: flex;
-    height: 0px;
-    align-items: center;
-      margin-left: 3px;
-    
-}
+        </main>
+        <br><br><br>
 
-.cuadrados2 {
-    height: 13px;
-    width: 13px;
-}
-
-textarea {
-    margin: 10px;
-     border-radius: 9px;
-     border-color: gray;
-     height: 45px;
-     background-color: transparent;
-     border: rgb(123, 123, 123) 2px solid;
-     width: 600px;
-     color: rgb(147, 147, 147);
-}
-
-.submit {
-    color: white;
-    background-color: #d42e79;
-    border-radius: 30px;
-    border: rgba(141, 141, 141, 0) 1px solid;
-    height: 30px;
-    width: 120px;
-
-}
-
-.reset {
-     color: rgb(255, 231, 231);
-      border: rgb(123, 123, 123) 2px solid;
-       border-color: gray;
-       border-radius: 30px;
-       height: 30px;
-       background-color: #1c2635;
-}
-
-.button {
-     color: rgb(50, 155, 206);
-      border: rgb(50, 155, 206) 2px solid;
-       border-color:rgb(50, 155, 206);
-       border-radius: 30px;
-       height: 30px;
-       background-color: #0e1528;
-}
-
-section {
-    margin-top: auto;
-}
-
-.h4-paralelo{
-  display: flex;
-  gap: 200px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-
-
+            <section class="h4-paralelo">
+            <h4 style="color: #9da3af;">Práctica de formulario HTML para el módulo de HTML/CSS en SMX </h4>
+            <h4 style="color: #9da3af;"> Estructura semántica: header • main • section • footer</h4>
+            </section>
+        
+</body> 
+</html>
 
 
