@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Corazón igual que antes */
+.heart {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    transform: rotate(45deg);
+    animation: float linear forwards;
+    z-index: 1; /* Corazones detrás del div de texto */
+}
+
+/* Parte redonda izquierda y derecha */
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -7.5px;
+    left: 0;
+}
+
+.heart::after {
+    left: -7.5px;
+    top: 0;
+}
+
+/* Animación */
+@keyframes float {
+    from {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* Div de texto central */
+.text-box {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta completamente al centro */
+    width: 250px; /* Ancho fijo */
+    height: 300px; /* Alto fijo */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.314);
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 2; /* Por encima de los corazones */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación suave */
+   
+}
+    
+
+
+.text-box:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Agranda un 10% */
+    box-shadow: 0px 8px 30px rgba(246, 0, 0, 0.8); /* Sombra más intensa */
+}
+
+    
+
+
+.photo {
+    width: 150px;          /* Tamaño de la foto */
+    height: 150px;         /* Igual que el ancho para que sea cuadrada */
+    border-radius: 50%;    /* Hace la foto redonda */
+    object-fit: cover;     /* Ajusta la foto dentro del círculo sin deformarla */
+    display: block;
+    margin: 0 auto;        /* Centra horizontalmente dentro del div */
+}
+
+.custom-button{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+</style>
+</head>
+<body>
+<a href="https://www.instagram.com/bv_jaan/" class="custom-button" target="_blank">
+    <div class="text-box">
+    <P><b>MI INSTAGRAM</b></P>
+    <img src="foto1.jpeg" alt="Foto" class="photo"> <br>
+    <b>@bv_jaan</b>
+    
+</div>
+</a>
+
+<script>
+let sideToggle = true; // Alterna entre izquierda y derecha
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+
+    // Alternamos el lado para que queden equilibrados
+    if(sideToggle){
+        heart.style.left = Math.random() * 50 + "vw"; // lado izquierdo
+    } else {
+        heart.style.left = (50 + Math.random() * 50) + "vw"; // lado derecho
+    }
+    sideToggle = !sideToggle;
+
+    // Duración aleatoria
+    heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(heart);
+
+    // Eliminar después de la animación
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+}
+
+// Crear muchos corazones continuamente
+setInterval(createHeart, 120);
+</script>
+
+</body>
+</html>
